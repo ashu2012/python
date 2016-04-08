@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../assignment7/.idea/assignment7.iml" filepath="$PROJECT_DIR$/../assignment7/.idea/assignment7.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/cs608/assignment8/.idea/assignment8.iml" filepath="$USER_HOME$/PycharmProjects/cs608/assignment8/.idea/assignment8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../assignment9/.idea/assignment9.iml" filepath="$PROJECT_DIR$/../assignment9/.idea/assignment9.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/gitrepo/.idea/gitrepo.iml" filepath="$USER_HOME$/PycharmProjects/gitrepo/.idea/gitrepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/projects.iml" filepath="$PROJECT_DIR$/.idea/projects.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/myrepo/webscrap/.idea/webscrap.iml" filepath="$USER_HOME$/PycharmProjects/myrepo/webscrap/.idea/webscrap.iml" />
+    </modules>
+  </component>
+</project>
