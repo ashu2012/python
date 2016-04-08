@@ -1,0 +1,142 @@
+****************************Project 1: Predicting Huntington's Disease*********************************************
+Ashutosh pathak
+Course cs608
+Email:apathak2@dons.usfca.edu
+https://usfca.instructure.com/courses/1559830/assignments/6565686?module_item_id=16290536
+
+How to run the project by going in to the terminal and type
+[Terminal] python hunt.py -v
+
+After that as per project requirement it will ask following user input:
+[Shell]Enter your name: atp
+[Shell]Enter you last name : atp
+[Shell]Enter your DNA: cagacahCAG
+
+output:
+First Name : atp
+Last Name : atp
+Patient DNA : cagaCAGCA
+The number of CAG repeats : 1
+the classification and disease status: ('Normal', 'Unaffected')
+
+There are few doc test are already written for your convenience.
+Thanks for your time
+
+**************************************************DOC Tests:************************************************************
+
+Trying:
+    countCAG("CAG")
+Expecting:
+    1
+ok
+Trying:
+    countCAG("")
+Expecting:
+    0
+ok
+Trying:
+    countCAG("cagcagacag")
+Expecting:
+    0
+ok
+Trying:
+    countCAG("C")
+Expecting:
+    0
+ok
+Trying:
+    countCAG("CA")
+Expecting:
+    0
+ok
+Trying:
+    countCAG("CAGCA")
+Expecting:
+    1
+ok
+Trying:
+    countCAG("CAGCATCAGCAGCAG")
+Expecting:
+    1
+ok
+Trying:
+    countCAG("CAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCA")
+Expecting:
+    41
+ok
+Trying:
+    prediction(27)
+Expecting:
+    ('Normal', 'Unaffected')
+ok
+Trying:
+    prediction(35)
+Expecting:
+    ('Intermediate', 'Unaffected')
+ok
+Trying:
+    prediction(42)
+Expecting:
+    ('Reduced Penetrance', 'Somewhat Affected')
+ok
+Trying:
+    prediction(45)
+Expecting:
+    ('Full Penetrance', 'Affected')
+ok
+2 items had no tests:
+    __main__
+    __main__.get_input
+2 items passed all tests:
+   8 tests in __main__.countCAG
+   4 tests in __main__.prediction
+12 tests in 4 items.
+12 passed and 0 failed.
+Test passed.
+
+
+**************************************************END to END Testing:************************************************************
+Enter you last name : pathak
+Enter your DNA: caCAGCAGACG
+First Name : ashutosh
+Last Name : pathak
+Patient DNA : caCAGCAGACG
+The number of CAG repeats : 2
+the classification and disease status: ('Normal', 'Unaffected')
+
+Enter your name: ashutosh
+Enter you last name : adsa
+Enter your DNA: CAGcaCAGCAG
+First Name : ashutosh
+Last Name : adsa
+Patient DNA : CAGcaCAGCAG
+The number of CAG repeats : 1
+the classification and disease status: ('Normal', 'Unaffected')
+
+Enter your name: ashu
+Enter you last name :
+Enter your DNA: c
+First Name : ashu
+Last Name :
+Patient DNA : c
+The number of CAG repeats : 0
+the classification and disease status: ('Normal', 'Unaffected')
+
+Enter your name: ashu
+Enter you last name : assdsad
+Enter your DNA:
+First Name : ashu
+Last Name : assdsad
+Patient DNA :
+The number of CAG repeats : 0
+the classification and disease status: ('Normal', 'Unaffected')
+
+Enter your name: ashu
+Enter you last name : ddsfsd
+Enter your DNA: CAGCAGCAGCAGACAGDSSDCAGCAG
+First Name : ashu
+Last Name : ddsfsd
+Patient DNA : CAGCAGCAGCAGACAGDSSDCAGCAG
+The number of CAG repeats : 4
+the classification and disease status: ('Normal', 'Unaffected')
+
