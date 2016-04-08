@@ -1,0 +1,65 @@
+Ans:1
+
+>>> 5%2
+1
+>>> 9%4
+1
+>>> 15%12
+3
+>>> 12%15
+12
+>>> 6%6
+0
+>>> 0%7
+0
+>>> 7%0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+>>> 
+
+
+In last case integer division by zero is not permisible.
+
+
+Ans2:
+
+Ans3:
+(i) not(p or q)  is logically equivalent to  not(p) and not(q).
+(2)not(p and q) is logically equivalent to not(p) or not(q).
+
+
+Ans4:
+	>>print(True or False)
+	True
+	>>print(True and False)
+	False
+	>>print(not(False) and True)
+	True
+	>>print(True or 7)
+	True
+	>>print(False or 7)
+	7
+	>>print(True and 0)
+	0
+	>>print(False or 8)
+	8
+	>>print("happy" and "sad")
+	sad
+	>>print("happy" or "sad")
+	happy
+	>>print("" and "sad")
+	empty string
+	>>print("happy" and "")
+	empty string
+
+
+If the logical operator is "or" then
+true or dont care  output:true and dont evalute 2nd
+false and dont care  output :false and dont evalute 2nd
+
+in rest of  cases evalute 2nd and return 2nd if 2nd operand is logically evalutes to true. 
+
+
+Ans6:
+

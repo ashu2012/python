@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if gte IE 9 ]><html class="ie ie9 scripts-not-loaded" lang="en"> <![endif]-->
+<!--[if !(IE)]><!--> <html class="not-ie scripts-not-loaded" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>  bigOh.txt: Computer Science for Health Informatics Professionals - 01 (Spring 2016)
+</title>
+  <!--[if lte IE 8]> <meta http-equiv=refresh content="0; URL=/ie-8-is-not-supported.html" /> <![endif]-->
+
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" rel="apple-touch-icon" />
+
+  
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/legacy_normal_contrast/bundles/common-0498ec31d7.css" media="all" rel="stylesheet" />
+  
+  <meta content="app-id=480883488" name="apple-itunes-app" />
+<meta content="app-id=com.instructure.candroid" name="google-play-app" />
+  
+  
+  <link href="https://shelby.usfca.edu/canvas/overrides.css" media="all" rel="stylesheet" />
+<link href="https://shelby.usfca.edu/canvas/test/sonhp_usf_online.css" media="all" rel="stylesheet" />
+  <script>
+    // listen for any clicks on links that have href="#" and queue them to be fired on dom ready.
+      function _earlyClick(e){
+        var cur = e.target || e.srcElement;
+        while ( cur && cur.ownerDocument ) {
+          if ( cur.getAttribute('href') == '#' ) {
+            e.preventDefault();
+            _earlyClick.clicks = _earlyClick.clicks || [];
+            _earlyClick.clicks.push(cur);
+            break;
+          }
+          cur = cur.parentNode;
+        }
+      }
+      document.addEventListener('click', _earlyClick);
+  </script>
+</head>
+
+<body class="with-left-side course-menu-expanded files context-course_1559830">
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul role="alert" aria-live="assertive" id="flash_message_holder"></ul>
+<div role="alert" aria-live="assertive" aria-relevant="additions" id="flash_screenreader_holder" class="screenreader-only"></div>
+
+<div id="application" >
+
+    <div id="header" class="no-print ">
+      <div id="header-inner">
+        <a href="#content" id="skip_navigation_link">Skip To Content</a>
+        <a id="header-logo" href="https://usfca.instructure.com/">My Dashboard</a>
+        <b id="header-logo-secondary"></b>
+        <div id="topbar" role="navigation" aria-label="User Menu">
+    <ul id="identity">
+      <li class="user_name"><a href="/about/6169849">Ashutosh Pathak</a></li>
+      <li class="first inbox">
+        <a href="/conversations?">
+          <span>Inbox</span>
+              <b class="unread-messages-count">11</b>
+        </a>
+      </li>
+      <li><a href="/profile/settings">Settings</a></li>
+    <li class="user_id" style="display: none;">6169849</li>
+    <li class="course_id" style="display: none;">1559830</li>
+    <li id="current_context_code" style="display: none;">course_1559830</li>
+    <li class="user_long_name" style="display: none;">Ashutosh Pathak</li>
+    <li class="logout">
+      <form accept-charset="UTF-8" action="/logout" id="identity-logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="delete" /><input name="authenticity_token" type="hidden" value="H4839MIfdbgeZ0zGORAYeBChezJdK+zghQ/I8Q9Z1m5a2Ry2snpG1kc0OKhWXHAVc+QcWhhxnIOyY/G+JBrnVw==" /></div>
+        <a href="/logout" onclick="document.getElementById(&#39;identity-logout-form&#39;).submit(); return false">Logout</a>
+</form>    </li>
+    <li id="identity-help-container">
+      <a class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">Help</a>
+    </li>
+</ul>
+
+</div>
+
+        
+          <ul role="navigation" id="menu" aria-label="Main Navigation">
+
+    <li id="courses_menu_item" class="menu-item">
+        <a href="/courses" class="menu-item-title">
+
+    Courses    <span class="menu-item-title-icon"></span> <i class="icon-mini-arrow-down"></i>
+  </a>
+  <div class="menu-item-drop">
+    <table cellspacing="0">
+      <tr>
+        <td class="menu-item-drop-column" id="menu_enrollments">
+  <div class="menu-item-header-container">
+    <span class="menu-item-heading">
+      My Courses
+    </span>
+    <div class="menu-item-customize">
+      <a class="customListOpen" href="/courses">View All or Customize (4)</a>
+    </div>
+  </div>
+  <ul class="menu-item-drop-column-list">
+    <li class="customListItem" data-id="1559830">
+  <a href="/courses/1559830">
+    <span class="name ellipsis" title="Computer Science for Health Informatics Professionals - 01 (Spring 2016) - HS-608-01">Computer Science for Health Informatics Professionals - 01 (Spring 2016)</span>
+      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right">Spring 2016</span>
+    <span class="subtitle ellipsis">enrolled as: Student</span>
+  </a>
+</li>
+<li class="customListItem" data-id="1235296">
+  <a href="/courses/1235296">
+    <span class="name ellipsis" title="MSHI Student Orientation - MSHI Student Orientation">MSHI Student Orientation</span>
+      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right"></span>
+    <span class="subtitle ellipsis">enrolled as: Student</span>
+  </a>
+</li>
+<li class="customListItem" data-id="1104356">
+  <a href="/courses/1104356">
+    <span class="name ellipsis" title="MSHI Student Portal - MSHI">MSHI Student Portal</span>
+      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right"></span>
+    <span class="subtitle ellipsis">enrolled as: Student</span>
+  </a>
+</li>
+<li class="customListItem" data-id="1560937">
+  <a href="/courses/1560937">
+    <span class="name ellipsis" title="Perspectives on Health Informatics - 01 (Spring 2016) - HS-610-01">Perspectives on Health Informatics - 01 (Spring 2016)</span>
+      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right">Spring 2016</span>
+    <span class="subtitle ellipsis">enrolled as: Student</span>
+  </a>
+</li>
+
+  </ul>
+</td>
+
+        
+        
+      </tr>
+    </table>
+  </div>
+
+    </li>
+    <li id="grades_menu_item" class="menu-item">
+      <a href="/grades" class="menu-item-no-drop">
+        Grades
+      </a>
+    </li>
+    <li id="calendar_menu_item" class="menu-item">
+      <a href="/calendar" class="menu-item-no-drop">
+        Calendar
+      </a>
+    </li>
+    
+
+  </ul>
+
+      </div>
+    </div>
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper-container" >
+    <div id="wrapper" >
+    
+          <div id="left-side" class="list-view ">
+              <h1 id="section-tabs-header">
+                HS-608-01
+              </h1>
+              <span id="section-tabs-header-subtitle" class="ellipsis">Spring 2016</span>
+            <nav aria-label="context" role="navigation"><ul id="section-tabs"><li class="section"><a class="home" href="/courses/1559830">Home</a></li><li class="section"><a aria-label="Course Announcements" class="announcements" href="/courses/1559830/announcements">Announcements</a></li><li class="section"><a class="modules" href="/courses/1559830/modules">Modules</a></li><li class="section"><a aria-label="Course Assignments" class="assignments" href="/courses/1559830/assignments">Assignments</a></li><li class="section"><a aria-label="Course Discussions" class="discussions" href="/courses/1559830/discussion_topics">Discussions</a></li><li class="section"><a class="quizzes" href="/courses/1559830/quizzes">Quizzes</a></li><li class="section"><a class="conferences" href="/courses/1559830/conferences">Conferences</a></li><li class="section"><a aria-label="Course Grades" class="grades" href="/courses/1559830/grades">Grades</a></li><li class="section"><a class="people" href="/courses/1559830/users">People</a></li><li class="section"><a class="context_external_tool_19368" href="/courses/1559830/external_tools/19368">Chat</a></li><li class="section"><a aria-label="Course Files" class="files active" href="/courses/1559830/files">Files</a></li><li class="section"><a class="context_external_tool_109201" href="/courses/1559830/external_tools/109201">EchoCenter</a></li></ul></nav>
+        </div>
+        <div id="main" >
+          <div id="not_right_side" >
+            <div id="content-wrapper" >
+                <nav aria-label="breadcrumbs" id="breadcrumbs" role="navigation"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/1559830"><span class="ellipsible">HS-608-01</span></a></li><li><a href="/courses/1559830/files"><span class="ellipsible">Files</span></a></li><li><a href="/courses/1559830/files/62875508"><span class="ellipsible">bigOh.txt</span></a></li></ul></nav>
+                
+              <div id="content" role="main" class="container-fluid">
+                    <h2>bigOh.txt</h2>
+    <span style="font-size: 1.2em;">
+      <a href="/courses/1559830/files/62875508/download">Download bigOh.txt</a>
+    </span> (1.7 KB)
+    <div id="doc_preview" data-canvadoc_session_url="/api/v1/canvadoc_session?blob=%7B%22user_id%22:10180000006169849,%22attachment_id%22:62875508,%22type%22:%22canvadoc%22%7D&amp;hmac=fcb051d924090ea7e828322e568d11d8facfbf80" data-attachment_id="62875508" data-mimetype="text/plain" data-attachment_view_inline_ping_url="https://usfca.instructure.com/courses/1559830/files/62875508/inline_view" data-attachment_preview_processing="true"></div>
+  <div id="sequence_footer" data-course-id="1559830" data-asset-id="62875508" data-asset-type="File"></div>
+
+
+
+              </div>
+            </div>
+            <div id="right-side-wrapper" >
+              <aside id="right-side" role="complementary">
+                
+              </aside>
+            </div>
+          </div>
+        </div>
+      
+      <footer role="contentinfo" id="footer" >
+  <a href="http://www.instructure.com" class="footer-logo ">
+    <span class="screenreader-only">
+      By Instructure
+    </span>
+  </a>
+  <span
+    id="footer-links"
+    >
+    <a target="_blank" href="http://eepurl.com/1LSkT">User Research</a>
+      <a class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">Help</a>
+    <a href="https://usfca.instructure.com/privacy_policy">Privacy policy</a>
+<a href="https://usfca.instructure.com/terms_of_use">Terms of service</a>
+<a href="http://facebook.com/instructure">Facebook</a>
+<a href="http://twitter.com/instructure">Twitter</a>
+
+  </span>
+</footer>
+
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">2c08a113-cce1-43df-b960-89a7cf53ee9c</div>
+    </div>
+    <div id="cant_record_dialog" style="display: none;">
+  <div>
+    In order to create video or audio recordings your computer needs to be 
+    webcam-enabled.  If you don&#39;t have a webcam on your computer, you can still
+    record audio-only messages by first installing the Google Video Chat
+    plugin.
+  </div>
+  <div style="text-align: center; font-size: 1.5em; margin: 10px;">
+    <a href="http://www.google.com/chat/video" target="_blank" class="btn">Install the Video Plugin</a>
+  </div>
+  <div class="links" style="text-align: right; font-size: 0.8em; display: none;">
+    <a href="#" class="cant_record_link">Don&#39;t have a webcam?</a>
+  </div>
+</div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"fms-prod.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"googleAnalyticsAccount":"UA-9138420-1","disableScribdPreviews":true,"enableHtml5FirstVideos":true,"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"Khan Academy","id":60711,"url":"https:\/\/www.edu-apps.org\/tool_redirect?id=khan_academy","icon_url":"https:\/\/www.edu-apps.org\/tools\/khan_academy\/icon.png","canvas_icon_class":null,"width":690,"height":530},{"name":"educreations","id":109051,"url":"https:\/\/www.edu-apps.org\/tool_redirect?id=educreations","icon_url":"https:\/\/www.edu-apps.org\/tools\/educreations\/icon.png","canvas_icon_class":null,"width":690,"height":530},{"name":"Twitter","id":109053,"url":"https:\/\/www.edu-apps.org\/twitter_lti\/","icon_url":"https:\/\/www.edu-apps.org\/assets\/inst_lti_twitter\/icon.png","canvas_icon_class":null,"width":475,"height":490},{"name":"YouTube","id":109569,"url":"https:\/\/www.edu-apps.org\/lti_public_resources\/?tool_id=youtube","icon_url":"https:\/\/www.edu-apps.org\/assets\/lti_public_resources\/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600},{"name":"Macmillan Higher Education Editor Button","id":110151,"url":"https:\/\/lmslink.bfwpub.com\/index.php?custom_action=toc","icon_url":"http:\/\/lmslink.bfwpub.com\/images\/icons\/macmillan-logo-50px.png","canvas_icon_class":null,"width":1200,"height":650},{"name":"Films On Demand","id":110747,"url":"https:\/\/lti.films.com\/LtiSearch.aspx","icon_url":"http:\/\/fod.infobase.com\/images\/LTI_logo.png","canvas_icon_class":null,"width":920,"height":636}]};
+  ENV = {"ASSET_HOST":"https:\/\/du11hjcvx0uqb.cloudfront.net","active_brand_config":null,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":"https:\/\/du11hjcvx0uqb.cloudfront.net\/dist\/brandable_css\/legacy_normal_contrast\/bundles\/what_gets_loaded_inside_the_tinymce_editor-5f7b75a3fc.css","current_user_id":"6169849","current_user":{"id":"6169849","display_name":"Ashutosh Pathak","avatar_image_url":"https:\/\/secure.gravatar.com\/avatar\/ae8526a7f490301a498aa1e32b644bad?s=50\u0026d=https%3A%2F%2Fcanvas.instructure.com%2Fimages%2Fmessages%2Favatar-50.png","html_url":"https:\/\/usfca.instructure.com\/about\/6169849"},"current_user_roles":["user","student"],"files_domain":"cluster37-files.instructure.com","DOMAIN_ROOT_ACCOUNT_ID":10180000000090279,"use_new_styles":false,"k12":false,"use_high_contrast":false,"SETTINGS":{"open_registration":false},"page_view_update_url":"\/page_views\/2c08a113-cce1-43df-b960-89a7cf53ee9c?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiMmMwOGExMTMtY2NlMS00M2RmLWI5NjAtODlhN2NmNTNlZTljIiwidSI6MTAxODAwMDAwMDYxNjk4NDksImMiOiIyMDE2LTAzLTI4VDE5OjA3OjM5LjYyWiJ9.37ZB0aTnnrAd2gw8DTKNAZ2f168TofFfIQ5Jq2zdBSs","context_asset_string":"course_1559830","ping_url":"https:\/\/usfca.instructure.com\/api\/v1\/courses\/1559830\/ping","TIMEZONE":"America\/Los_Angeles","CONTEXT_TIMEZONE":"America\/Los_Angeles","LOCALE":"en-US","TOURS":[],"badge_counts":{"submissions":1},"notices":[{"type":"warning","content":{"html":"Your browser does not meet the minimum requirements for Canvas. Please visit the \u003ca href=\"https:\/\/community.canvaslms.com\/docs\/DOC-1284\"\u003eCanvas Community\u003c\/a\u003e for a complete list of supported browsers."},"classes":"unsupported_browser"}]};
+
+    // TODO: move this out when we have a single require call
+    require = {
+      translate: true,
+      baseUrl: '/optimized',
+      paths: {
+    "common":"compiled\/bundles\/common",
+    "jqueryui":"vendor\/jqueryui",
+    "compiled\/tinymce":"compiled\/tinymce.js?v2",
+    "demo_site":"plugins\/demo_site",
+    "migration_tool":"plugins\/migration_tool",
+    "catalog_provisioner":"plugins\/catalog_provisioner",
+    "instructure_misc_plugin":"plugins\/instructure_misc_plugin",
+    "analytics":"plugins\/analytics",
+    "multiple_root_accounts":"plugins\/multiple_root_accounts",
+    "canvasnet_registration":"plugins\/canvasnet_registration",
+    "compiled\/bundles\/modules\/content_migration_setup_without_extensions":"compiled\/bundles\/modules\/content_migration_setup",
+    "compiled\/bundles\/modules\/content_migration_setup":"compiled\/bundles\/modules\/content_migration_setup_with_extensions",
+    "compiled\/registration\/main_without_extensions":"compiled\/registration\/main",
+    "compiled\/registration\/main":"compiled\/registration\/main_with_extensions",
+    "compiled\/registration\/signupDialog_without_extensions":"compiled\/registration\/signupDialog",
+    "compiled\/registration\/signupDialog":"compiled\/registration\/signupDialog_with_extensions",
+    "compiled\/bundles\/modules\/account_quota_settings_without_extensions":"compiled\/bundles\/modules\/account_quota_settings",
+    "compiled\/bundles\/modules\/account_quota_settings":"compiled\/bundles\/modules\/account_quota_settings_with_extensions",
+    "canvas_quizzes":"client_apps\/canvas_quizzes",
+    "app\/config\/environments\/production":"empty:"},
+      packages : [{"name":"ic-ajax","location":"bower\/ic-ajax\/dist\/amd"},{"name":"ic-styled","location":"bower\/ic-styled"},{"name":"ic-menu","location":"bower\/ic-menu"},{"name":"ic-tabs","location":"bower\/ic-tabs\/dist\/amd"},{"name":"ic-droppable","location":"bower\/ic-droppable\/dist\/amd"},{"name":"ic-sortable","location":"bower\/ic-sortable\/dist\/amd"},{"name":"ic-modal","location":"bower\/ic-modal\/dist\/amd"},{"name":"ic-lazy-list","location":"bower\/ic-lazy-list"},{"name":"ember-qunit","location":"bower\/ember-qunit\/dist\/amd"}],
+      shim: {
+    'bower/react-router/build/umd/ReactRouter': {
+      deps: ['react'],
+      exports: 'ReactRouter'
+    },
+    'bower/react-tray/dist/react-tray': {
+      deps: ['react']
+    },
+    'bower/react-modal/dist/react-modal': {
+      deps: ['react']
+    },
+    'bower/react-tokeninput/dist/react-tokeninput': {
+      deps: ['react'],
+    },
+    'bower/react-select-box/dist/react-select-box': {
+      deps: ['react'],
+    },
+    'bower/ember/ember': {
+      deps: ['jquery', 'handlebars'],
+      exports: 'Ember'
+    },
+    'bower/ember-data/ember-data': {
+      deps: ['ember'],
+      exports: 'DS'
+    },
+    'bower/handlebars/handlebars.runtime': {
+      exports: 'Handlebars'
+    },
+    'bower/reflux/dist/reflux.js': {
+      deps: ['react'],
+      exports: 'Reflux'
+    },
+    'vendor/FileAPI/FileAPI.min': {
+      deps: ['jquery', 'vendor/FileAPI/config'],
+      exports: 'FileAPI'
+    },
+    'fixed-data-table': {
+      deps: ['object_assign', 'react'],
+      exports: 'fixed-data-table'
+    },
+    'vendor/bootstrap-select/bootstrap-select' : {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/jquery.jcrop': {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/jquery.smartbanner': {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/md5': {
+      exports: 'CryptoJS'
+    },
+    'handlebars': {
+      deps: ['bower/handlebars/handlebars.runtime.amd'],
+      exports: 'Handlebars'
+    },
+    'vendor/i18n': {
+      exports: 'I18n'
+    },
+    'vendor/react-infinite-scroll.min' : {
+      deps: ['react'],
+      exports: 'InfiniteScroll'
+    },
+    'bower/tinymce/tinymce' : {
+      exports: 'tinymce'
+    },
+    'bower/axios/dist/axios' : {
+      exports: 'axios'
+    },
+    'bower/tinymce/themes/modern/theme' : {
+      deps: ['bower/tinymce/tinymce'],
+      exports: 'tinymce'
+    }
+  }
+,
+      map: {"canvas_quizzes":{"lodash":"underscore","d3":"vendor\/d3.v3","backbone":"vendor\/backbone","jquery\/instructure_date_and_time":"jquery.instructure_date_and_time","react":"old_unsupported_dont_use_react","react-router":"old_unsupported_dont_use_react-router"},"*":{"React":"react"}},
+      waitSeconds: 60
+    };
+</script>
+
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/vendor/require-749d0c60e9.js"></script>
+
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/common-c012f1a2b8.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/module_sequence_footer-678966a78a.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/file_show-7864620d49.js"></script>
+<script>
+//<![CDATA[
+          require(['jquery'], function () {
+            ["https:\/\/shelby.usfca.edu\/canvas\/overrides.js","https:\/\/shelby.usfca.edu\/canvas\/test\/utils_sonhp.js"].forEach(function (src) {
+              var s = document.createElement('script');
+              s.src = src;
+              document.body.appendChild(s);
+            });
+          });
+
+//]]>
+</script>
+
+
+
+  <script>
+  // Determines if the scripts are loaded.
+  // When we get everything out of the views, and have a single top-level
+  // `require`, this becomes meaningless and will be abandoned.
+  (function() {
+    var attempts = 0;
+    var timeout = 10;
+    var check = function() {
+      attempts++;
+      var done = !window.requirejs.s.contexts._.defQueue.length
+      var giveup = attempts === 100; // 1 second
+      if (done || giveup) {
+        var className = document.documentElement.className;
+        document.documentElement.className = className.replace(/scripts-not-loaded/, '');
+        return;
+      }
+      setTimeout(check, timeout);
+    };
+
+    check();
+  }).call(this);
+  </script>
+
+
+</div> <!-- #application -->
+</body>
+</html>

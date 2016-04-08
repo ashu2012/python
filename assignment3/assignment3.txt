@@ -1,0 +1,36 @@
+Ans2:
+	following error we got:
+
+	Traceback (most recent call last):
+	  File "ans3.2.py", line 1, in <module>
+	    clear_screen()
+	NameError: name 'clear_screen' is not defined
+
+	rule is before executing the function it should be defined. In this case main try to run clear_Screen but it didn't find its defination.
+	before a function call , function should be defined.
+
+Ans3:
+	 
+	assignment3$ python ans3.3.1.py 
+	Ans3.3.1:output is not affected.
+
+
+	assignment3$ python ans3.3.2.py 
+	Traceback (most recent call last):
+	  File "ans3.3.2.py", line 20, in <module>
+	    nine_lines()
+	  File "ans3.3.2.py", line 8, in nine_lines
+	    three_lines()
+	  File "ans3.3.2.py", line 3, in three_lines
+	    new_line()
+	NameError: global name 'new_line' is not defined
+	Ans3.3.2: error occurs as from the call of nine_lines()->three_lines()->new_line()
+
+	It was not able to find the defination of called function same as explained in previous question.
+
+Ans4:
+	It prints 
+	>>> from import_test import *
+	>>> cat_n_times('Spam', 7)
+	SpamSpamSpamSpamSpamSpamSpam
+

@@ -1,0 +1,40 @@
+# asymptotic classes with print statements as the operation
+## how many print statements?
+def print_zeroth(lst);   <- O(1)
+    print lst[0]
+
+def print_list(lst);   <- O(N)
+    for elem in lst:
+        print elem
+
+def print_zeroth(lst);     <- O(N^2)
+    for i in range(len(lst):
+       for j in range(len(lst)):
+          print lst[i], lst[j]
+
+
+algorithm analysis with big Oh  ******************
+let N be the size of the dataset (list of N elements)
+chart 2
+big O notation1:motivation: want a way to be able to predict if
+ our alg is fast enough without gen huge dataset and run for weeks
+  ex: N^3 alg: N = 100,N^3=1000000, N = 1 bill=10^9, N^3=10^27
+   1). N=10^2    N^2=10^4   N^3= 10^6   2^N=2^100= ~10^30 =  10^21* 10^9 = 10^21 sec
+       since most current microprocessorsexecute at least a billion instructions per sec
+    Assume 1 billion instructs per sec. I checked on internet*****: 
+          exp 2^100 = ~10^30 = 1E21 sec =
+                = 22,800,000,000,000 years 22.8 tril years
+                online:  31,709,791,983,800 = ~ 30 trillion years ***********
+          whereas O(N), N^2), O(N^3) are all less than 1 sec to run for N=100
+   2). N=10^9    N^2=10^18   N^3=10^27  
+    Assume 1 billion (10^9) ops per sec, so divide by 10^9 to get numSeconds:
+      O(N) 1 sec    O(N^2) 1 bil sec ~ 31.7 years    O(N^3) ~ 10^18 sec ~31.7 billion yrs ***
+
+3600 * 24* 365=31.5 mil sec per year
+classes: O(1) O(N), O(N^2), O(n^3), O(2^N)
+fictitous alg: O(4N) + O(2N^2) + 5 (ex - print statements: time cost indep of N)
+talk about how fast it is: class of algs 
+get rid of coeficients (N dominate)     : see chart 4 ***
+get rid of lower order terms (higher order terms dominate)  : see chart 4
+
+

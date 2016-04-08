@@ -1,0 +1,182 @@
+/usr/bin/python2.7 /home/atp/cs608/assignment7/stringtools.py -v
+Trying:
+    count('is', 'Mississippi')
+Expecting:
+    2
+ok
+Trying:
+    count('an', 'banana')
+Expecting:
+    2
+ok
+Trying:
+    count('ana', 'banana')
+Expecting:
+    2
+ok
+Trying:
+    count('nana', 'banana')
+Expecting:
+    1
+ok
+Trying:
+    count('nanan', 'banana')
+Expecting:
+    0
+ok
+Trying:
+    count_letters('a')
+Expecting:
+    1
+ok
+Trying:
+    count_letters("banana")
+Expecting:
+    3
+ok
+Trying:
+    is_palindrome('abba')
+Expecting:
+    True
+ok
+Trying:
+    is_palindrome('abab')
+Expecting:
+    False
+ok
+Trying:
+    is_palindrome('tenet')
+Expecting:
+    True
+ok
+Trying:
+    is_palindrome('banana')
+Expecting:
+    False
+ok
+Trying:
+    is_palindrome('straw warts')
+Expecting:
+    True
+ok
+Trying:
+    mirror("good")
+Expecting:
+    'gooddoog'
+ok
+Trying:
+    mirror("yes")
+Expecting:
+    'yessey'
+ok
+Trying:
+    mirror('Python')
+Expecting:
+    'PythonnohtyP'
+ok
+Trying:
+    mirror("")
+Expecting:
+    ''
+ok
+Trying:
+    mirror("a")
+Expecting:
+    'aa'
+ok
+Trying:
+    remove('an', 'banana')
+Expecting:
+    'bana'
+ok
+Trying:
+    remove('cyc', 'bicycle')
+Expecting:
+    'bile'
+ok
+Trying:
+    remove('iss', 'Mississippi')
+Expecting:
+    'Missippi'
+ok
+Trying:
+    remove('egg', 'bicycle')
+Expecting:
+    'bicycle'
+ok
+Trying:
+    remove_all('an', 'banana')
+Expecting:
+    'ba'
+ok
+Trying:
+    remove_all('cyc', 'bicycle')
+Expecting:
+    'bile'
+ok
+Trying:
+    remove_all('iss', 'Mississippi')
+Expecting:
+    'Mippi'
+ok
+Trying:
+    remove_all('eggs', 'bicycle')
+Expecting:
+    'bicycle'
+ok
+Trying:
+    remove_letter('a', 'apple')
+Expecting:
+    'pple'
+ok
+Trying:
+    remove_letter('a', 'banana')
+Expecting:
+    'bnn'
+ok
+Trying:
+    remove_letter('z', 'banana')
+Expecting:
+    'banana'
+ok
+Trying:
+    remove_letter('i', 'Mississippi')
+Expecting:
+    'Msssspp'
+ok
+Trying:
+    reverse('happy')
+Expecting:
+    'yppah'
+ok
+Trying:
+    reverse('Python')
+Expecting:
+    'nohtyP'
+ok
+Trying:
+    reverse("")
+Expecting:
+    ''
+ok
+Trying:
+    reverse("P")
+Expecting:
+    'P'
+ok
+1 items had no tests:
+    __main__
+8 items passed all tests:
+   5 tests in __main__.count
+   2 tests in __main__.count_letters
+   5 tests in __main__.is_palindrome
+   5 tests in __main__.mirror
+   4 tests in __main__.remove
+   4 tests in __main__.remove_all
+   4 tests in __main__.remove_letter
+   4 tests in __main__.reverse
+33 tests in 9 items.
+33 passed and 0 failed.
+Test passed.
+
+Process finished with exit code 0

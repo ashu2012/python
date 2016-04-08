@@ -1,0 +1,84 @@
+Ans1:print statement takes expression or variable . in  [bash] print n=7 . it just execute n=7 which is asignment staement  nor a variable or expression. so causes syntax error. in 2nd  case it evalutes expression and prints its value , 3rd one it prints value , 4th one it takes multiple arguments some values of string data type and some are int or decimal data type.
+
+Python 2.7.6 (default, Mar 22 2014, 22:59:38) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print n=7
+  File "<stdin>", line 1
+    print n=7
+           ^
+SyntaxError: invalid syntax
+>>> print 7+5
+12
+>>> print 5.2
+5.2
+>>> print 5.2 ,"this",4-2, "that",5/2.0
+5.2 this 2 that 2.5
+
+
+Ans3:
+6 * (1 - 2)
+
+Ans4:
+nthing happens to the output as comments are for readability for the code. 
+
+Ans5:
+>>> x= input()
+3.14
+>>> type(x)
+<type 'float'>
+#IT TAKES USER INPUT EVALUTES WHAT DATA TYPE AND VALUE
+>>> x= raw_input()
+3.14
+>>> type(x)
+<type 'str'>
+#IT TAKES USER INPUT IN WHAT EVER FORMAT AND STORES IN STRING FORMAT
+
+>>> x= input()
+'The knights who say "ni!"'
+>>> x
+'The knights who say "ni!"'
+>>> 
+#IT TAKES USER INPUT IN STRING FORMAT AND EVALUTES AND STORES IN STRING FORMAT WITH VALUE AS INPUT STRING AND TYPE AS STRING 
+
+PART2:
+>>> x= input()
+The knights who say "ni!"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1
+    The knights who say "ni!"
+              ^
+SyntaxError: invalid syntax
+
+input() expects syntactically correct user input for valid data types and evalutes and stores the value. in this case it is not a valid string type.
+
+>>> x= raw_input()
+'The knights who say "ni!"'
+>>> x
+'\'The knights who say "ni!"\''
+raw_input takes what ever input and converts into string
+
+>>> x= input()
+3+4
+>>> x
+7
+it takes input and then evalutes the expression input and store final result 
+
+
+raw_input() takes exactly what the user typed and passes it back as a string. input() takes the raw_input() and performs an eval() on it as well. The main difference is that input() expects a syntactically correct python statement where raw_input() does not.
+
+
+Ans 6:
+> 
+>>> bruce+4
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'bruce' is not defined
+>>> bruce=6
+>>> bruce+4
+10
+
+
+Ans7:
+

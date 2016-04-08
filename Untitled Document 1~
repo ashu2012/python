@@ -1,0 +1,37 @@
+Q2
+Ans2:
+~$ python
+Python 2.7.6 (default, Mar 22 2014, 22:59:38) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+2
+3
+>>> 1*2
+2
+>>> 1**2
+1
+>>> 1/2
+0
+>>> 
+
+Explaination : When we divide the 1 by 2 using the "/" operator i.e. 1/2. As both the operands are int so the result is casted into int by ignoring the decimal digits,that is why the interpreter has print the zero.  
+
+Q3
+Ans3:-
+>>> 8*4)
+  File "<stdin>", line 1
+    8*4)
+       ^
+SyntaxError: invalid syntax
+>>> 8*4*
+  File "<stdin>", line 1
+    8*4*
+       ^
+SyntaxError: invalid syntax
+>>> 8*4*(
+... 34)
+1088
+
+
+
+

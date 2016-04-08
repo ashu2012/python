@@ -1,0 +1,92 @@
+Q2
+Ans2:
+~$ python
+Python 2.7.6 (default, Mar 22 2014, 22:59:38) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+2
+3
+>>> 1*2
+2
+>>> 1**2
+1
+>>> 1/2
+0
+>>> 
+
+Explaination : When we divide the 1 by 2 using the "/" operator i.e. 1/2. As both the operands are int so the result is casted into int by ignoring the decimal digits,that is why the interpreter has print the zero.  
+
+Q3
+Ans3:-
+>>> 8*4)
+  File "<stdin>", line 1
+    8*4)
+       ^
+SyntaxError: invalid syntax
+>>> 8*4*
+  File "<stdin>", line 1
+    8*4*
+       ^
+SyntaxError: invalid syntax
+>>> 8*4*(
+... 34)
+1088
+
+Q4
+Ans:
+String literals can be enclosed in matching single quotes (') or double quotes (").
+>>> print 'hello'
+hello
+>>> print "hello"
+hello
+>>> print '"hello"'
+"hello"
+>>> print "'hello'"
+'hello'
+
+In Python, if you want the string to be taken literally, you can use raw strings (a string preceded by the 'r' character):
+>>> print "hello \n hello"
+hello 
+ hello
+>>> print 'hello \n hello'
+hello 
+ hello
+>>> print r'hello \n hello'
+hello \n hello
+>>> print r"hello \n hello"
+hello \n hello
+>>> 
+
+the official docs at https://docs.python.org/2.0/ref/strings.html. SO according to the question in both the cases no quotes are printed as shown above.
+ 
+Q5
+Ans5:
+>>> print cheese
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cheese' is not defined
+>>> cheese="abcd"
+>>> print cheese
+abcd
+>>> print "cheese"
+cheese
+>>> 
+
+Explaination:In python without double quotes all Strings are treated as variables otherwise String litrals. when we simply print cheese interpreter search for variable cheese in its execution context and reported name error as it was not able to found it. In second case if we declare the varibale cheese with string  "abcd" and then call print  cheeese it prints the abcd String. In 3rd case we simply print the String "cheese".
+
+Q6
+Ans6:
+
+(a)when we type 'This is a test...'  in python shell it gets printed in shell
+ >>> 'this is a test'
+'this is a test'
+>>> 
+(b)When we write  'This is a test...'  in a python script file q6.py nothing goes to output. 
+bash$ python q6.py 
+bash$
+(c)When we write  print  'This is a test...' in python script file and rum from terminal as python q6.py then output gets printed in terminal as in case (a).
+bash$ python q6.py 
+this is a test 
+
+
+

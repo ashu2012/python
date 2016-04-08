@@ -1,0 +1,177 @@
+# asymptotic classes with print statements as the operation
+## how many print statements?
+def print_zeroth(lst);   <- O(1)
+    print lst[0]
+
+def print_list(lst);   <- O(N)
+    for elem in lst:
+        print elem
+
+def print_zeroth(lst);     <- O(N^2)
+    for i in range(len(lst):
+       for j in range(len(lst)):
+          print lst[i], lst[j]
+
+
+algorithm analysis with big Oh  ******************
+let N be the size of the dataset (list of N elements)
+chart 2
+big O notation1:motivation: want a way to be able to predict if
+ our alg is fast enough without gen huge dataset and run for weeks
+  ex: N^3 alg: N = 100,N^3=1000000, N = 1 bill=10^9, N^3=10^27
+   1). N=10^2    N^2=10^4   N^3= 10^6   2^N=2^100= ~10^30 =  10^21* 10^9 = 10^21 sec
+       since most current microprocessorsexecute at least a billion instructions per sec
+    Assume 1 billion instructs per sec. I checked on internet*****: 
+          exp 2^100 = ~10^30 = 1E21 sec =
+                = 22,800,000,000,000 years 22.8 tril years
+                online:  31,709,791,983,800 = ~ 30 trillion years ***********
+          whereas O(N), N^2), O(N^3) are all less than 1 sec to run for N=100
+   2). N=10^9    N^2=10^18   N^3=10^27  
+    Assume 1 billion (10^9) ops per sec, so divide by 10^9 to get numSeconds:
+      O(N) 1 sec    O(N^2) 1 bil sec ~ 31.7 years    O(N^3) ~ 10^18 sec ~31.7 billion yrs ***
+
+3600 * 24* 365=31.5 mil sec per year
+classes: O(1) O(N), O(N^2), O(n^3), O(2^N)
+fictitous alg: O(4N) + O(2N^2) + 5 (ex - print statements: time cost indep of N)
+talk about how fast it is: class of algs 
+get rid of coeficients (N dominate)     : see chart 4 ***
+get rid of lower order terms (higher order terms dominate)  : see chart 4
+
+
+
+Midterm Review
+In-person Midterm exam: 
+        Tues March 29th in class (in room TBA  at  4:35 - 5:50 pm)
+
+   
+
+The focus:
+
+You should be able to demonstrate problem solving ability by predicting output, writing code
+
+Be able to independently code functions such as those assigned in chapters 7, 9, Project 2.
+
+ 
+
+Know what's in all quizzes
+
+Know the difference between the assignment operator (“=”) and the comparison operator (“= =”)
+
+Know that a variable that is local to a function does NOT exist in  __main__
+
+Know how to evaluate an expression:
+
+    as in math, replace the expression with a single value
+
+       algebraic expressions
+
+       boolean expressions
+
+       use of the bracket operator
+
+Know the difference between a function definition and a function call.
+
+Be able to predict output or return value of a function. (Hint: a loop trace may help)
+
+When a function heading and description is provided,
+
+    be able to call the function to correctly perform a task
+
+Be able to write code to correctly perform a task
+
+Be able to correctly return a value from a function,
+
+     including assigning the returned value to a variable in the caller
+
+Be able to print variables (Ex: print statement inside a loop)
+
+Be able to predict whether execution of a loop results in endless looping
+
+Be able to write out a loop trace.
+
+Know what we covered in the text through chapter 9 (lists)  except ch 9: 17, 18
+
+Be able to write a function to correctly solve a problem. (Hint: use an actual example)
+
+Be able to independently code functions such as those assigned in chapters 5,6,7, 9,
+
+       And the first eight algorithms of  Project 2
+
+Be able to code algorithms that use the accumulator pattern
+
+      initialize empty result, then add (numbers) or concatenate onto the result using +=
+
+Be able to identify elements of data structures that are accessed by bracket operator []
+
+Know for loops:
+
+       for elem in seq:        <- data structure is seq,  elem takes on each element of seq in turn
+
+       for i in range(len(seq)): <- i takes on each index in turn from 0 to the last,  ith element is seq[i]
+
+Know looping and endless looping:
+
+  Typically in a while loop when the loop variable doesn’t change so the condition remains True  
+
+Know sequence types:
+
+      strings “”
+
+      lists []
+
+ 
+
+Additional topics:
+
+operators, including string operators “+” (string concatonation) and “*” (string repetition)
+
+be able to use input() to get numerical input,  raw_input() to get string input from the user
+
+syntax errors: program won’t run (Ex: indent errors; no colon after if, loop or function definition)
+
+semantic or logic errors (Ex: the wrong value is calculated)
+
+runtime errors: program won’t continue (Ex: string index out of range, divide by zero)
+
+use of the modulus operator (%) to determine if one integer is a factor of another
+
+Use of mod by ten (% 10) to get the last digit of a positive integer
+
+Use of integer division by ten (/ 10) to get all digits of a positive integer except for the last digit
+
+Type conversion
+
+big-oh notation (see file bigOh.txt)
+
+ 
+
+ 
+
+Most Important! (There will be a lot of this on the midterm):
+
+ 
+
+Predict the output of code that is provided; Write a block of code or a function to perform a task
+
+   with conditional control structure
+
+   with looping control structure
+
+ 
+
+   I won't tell you which control structure to use:
+
+       you should be able to tell whether you need a sequential, conditional or repetitive structure
+
+ 
+
+ 
+
+Also, given a function header and description, write a function call to perform a task (code camp)
+
+Know some basic algorithms to get you starte : 
+
+      The six basic algorithms from Code Camp 2
+
+ 
+

@@ -1,0 +1,5 @@
+def cat_n_times(s, n):
+	input_string=s
+	for i in n:
+		input_string=input_string+s
+   	print input_string
